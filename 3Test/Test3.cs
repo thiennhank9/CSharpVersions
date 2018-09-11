@@ -10,7 +10,7 @@ namespace _3Test
         delegate int del(int i);
 
         [TestMethod]
-        public void TestMethod1()
+        public void Test_AutoImplementProperties()
         {
             Customer customer = new Customer(40.0, "nhan", 1);
             customer.TotalPurchases += 40.0;
@@ -18,7 +18,7 @@ namespace _3Test
         }
 
         [TestMethod]
-        public void TestMethod2()
+        public void Test_LambdaExpression()
         {
             del myDelegate = x => x * x;
             int j = myDelegate(5);
