@@ -10,11 +10,13 @@ namespace _2Iterator
     {
         static void Main(string[] args)
         {
-            foreach (int number in SomeNumbers())
+            Console.WriteLine(DoInterator.SomeNumbers());
+
+            foreach (int number in DoInterator.SomeNumbers())
             {
                 Console.Write(number.ToString() + " ");
             }
-            // Output: 3 5 8  
+            // Output: 3 5 7 
             Console.ReadKey();
         }
 
@@ -22,7 +24,17 @@ namespace _2Iterator
         {
             yield return 3;
             yield return 5;
-            yield return 8;
+            yield return 7;
+        }
+    }
+
+    public class DoInterator
+    {
+        public static System.Collections.IEnumerable SomeNumbers()
+        {
+            yield return 3;
+            yield return 5;
+            yield return 7;
         }
     }
 }

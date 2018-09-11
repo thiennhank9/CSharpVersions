@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _3AutoImplementProperties
 {
-    class Customer
+    public class Customer
     {
         // Auto-Impl Properties for trivial get and set
         public double TotalPurchases { get; set; }

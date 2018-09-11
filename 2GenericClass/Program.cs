@@ -36,7 +36,7 @@ namespace _2GenericClass
         }
     }
 
-    class TestGenericClass<T>
+    public class TestGenericClass<T>
     {
         private T[] array;
 

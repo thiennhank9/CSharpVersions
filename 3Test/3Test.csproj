@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FBD8EB71-09E9-4969-A866-AF366E5281C8}</ProjectGuid>
+    <ProjectGuid>{BFCBFFC1-D846-4574-A745-1D3151700889}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_2Test</RootNamespace>
-    <AssemblyName>2Test</AssemblyName>
+    <RootNamespace>_3Test</RootNamespace>
+    <AssemblyName>3Test</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,40 +49,20 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Test2.cs" />
+    <Compile Include="Test3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\2AnonymousMethod\2AnonymousMethod.csproj">
-      <Project>{51e5f93e-372f-4f9a-a2a1-d853d9181a38}</Project>
-      <Name>2AnonymousMethod</Name>
+    <ProjectReference Include="..\3AutoImplementProperties\3AutoImplementProperties.csproj">
+      <Project>{76579717-ff52-4af4-9630-bbb7e5c59c42}</Project>
+      <Name>3AutoImplementProperties</Name>
     </ProjectReference>
-    <ProjectReference Include="..\2GenericClass\2GenericClass.csproj">
-      <Project>{ca409f19-dc29-41f1-b08b-7bfae57c9519}</Project>
-      <Name>2GenericClass</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\2GenericDelegate\2GenericDelegate.csproj">
-      <Project>{417b9753-0822-4988-b8ef-1c9c2eead52b}</Project>
-      <Name>2GenericDelegate</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\2GenericMethod\2GenericMethod.csproj">
-      <Project>{ac628f72-d627-422e-ad4d-9457c12fd445}</Project>
-      <Name>2GenericMethod</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\2Interator\2Interator.csproj">
-      <Project>{db3a2d05-d0f0-4992-9a54-75afdc98fda3}</Project>
-      <Name>2Interator</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\2NullableTypes\2NullableTypes.csproj">
-      <Project>{005cb369-d1dd-4fc4-b9b6-c80905edea60}</Project>
-      <Name>2NullableTypes</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\2Partial\2Partial.csproj">
-      <Project>{0b020f36-5fb9-47d6-bb63-29f8e775f9a8}</Project>
-      <Name>2Partial</Name>
+    <ProjectReference Include="..\3LambdaExpression\3LambdaExpression.csproj">
+      <Project>{21e16ca1-6f15-473c-8761-9139931cfbda}</Project>
+      <Name>3LambdaExpression</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
