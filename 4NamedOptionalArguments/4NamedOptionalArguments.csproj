@@ -7,7 +7,7 @@
     <ProjectGuid>{C430CF77-83C9-4190-B224-3EBF16A39966}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_4NamedOptionalArguments</RootNamespace>
-    <AssemblyName>_4NamedOptionalArguments</AssemblyName>
+    <AssemblyName>4NamedOptionalArguments</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
