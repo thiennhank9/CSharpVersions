@@ -20,10 +20,6 @@ namespace _2Test
         public void Test_GenericClass()
         {
             TestGenericClass<int> intGeneric = new TestGenericClass<int>(3);
-            for (int i = 0; i < 3; i++)
-            {
-                intGeneric.setItem(i, i);
-            }
 
             for (int i = 0; i < 3; i++)
             {
