@@ -18,9 +18,7 @@ namespace _4DynamicBinding
             System.Console.WriteLine(dyn.GetType());
             System.Console.WriteLine(obj.GetType());
 
-            dyn = dyn + 3;
-
-     
+            Console.WriteLine(dyn = dyn + 3);
             // obj = obj + 3; // This line should be errors
         }
     }

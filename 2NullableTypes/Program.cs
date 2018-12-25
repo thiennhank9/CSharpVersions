@@ -15,14 +15,14 @@ namespace _2oNullableTypes
             // Is the HasValue property true?
             if (num.HasValue)
             {
-                Console.WriteLine("num = " + num.Value);
+                Console.WriteLine("has num = " + num.Value);
             }
             else
             {
                 Console.WriteLine("num = Null");
             }
 
-            Console.Write("Add to nullable " + (num + 1));
+            Console.WriteLine("Add to nullable " + (num + 1));
 
             // y is set to zero
             int y = num.GetValueOrDefault();

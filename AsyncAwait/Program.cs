@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,7 +11,8 @@ namespace AsyncAwait
     {
         static void Main(string[] args)
         {
-            Task.WaitAll(AsyncMethod1(), AsyncMethod2());
+            Task.WaitAll(ExAsync());
+            //Task.WaitAll(AsyncMethod1(), AsyncMethod2());
         }
 
         static async Task AsyncMethod1()
@@ -34,6 +36,26 @@ namespace AsyncAwait
                 await Task.Delay(ms);
                 Console.WriteLine($"{s} at {time} ms");
             }
+        }
+
+        static async Task ExAsync()
+        {
+            HttpClient client = new HttpClient();
+
+            Task<string> getStringTask = client.GetStringAsync("http://msdn.microsoft.com");
+
+            PrintWaiting();
+
+            string urlContents = await getStringTask;
+
+            Console.WriteLine(urlContents);
+            Console.WriteLine("Done");
+
+        }
+
+        static void PrintWaiting()
+        {
+            Console.WriteLine("Waiting");
         }
     }
 }
