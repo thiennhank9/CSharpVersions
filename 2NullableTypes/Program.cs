@@ -12,6 +12,8 @@ namespace _2oNullableTypes
         {
             int? num = null;
 
+            int? testnull = null;
+
             // Is the HasValue property true?
             if (num.HasValue)
             {
@@ -25,7 +27,9 @@ namespace _2oNullableTypes
             Console.WriteLine("Add to nullable " + (num + 1));
 
             // y is set to zero
-            int y = num.GetValueOrDefault();
+            int y = num ?? 1;
+
+            Console.WriteLine("y = {0}", y);
 
             // num.Value throws an InvalidOperationException if num.HasValue is false
             try

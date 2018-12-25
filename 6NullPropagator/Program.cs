@@ -29,9 +29,10 @@ namespace _6NullPropagator
 
         static void ShowInfo(Student student)
         {
-            WriteLine(student?.Name ?? "No name");
-            WriteLine(student?.studentDetails?.Address ?? "No address");
-            WriteLine(student?.studentDetails?.Email ?? "No email provided");
+            WriteLine($"name: {student?.Name ?? "No Name"}");
+            WriteLine($"email: {student?.studentDetails?.Email ?? "No Email"}");
+            WriteLine($"address: {student?.studentDetails?.Address ?? "No Address"}");
+            WriteLine($"age: {student?.age ?? 22 }");
         }
     }
 
@@ -39,6 +40,8 @@ namespace _6NullPropagator
     {
         public string Name { get; set; }
         public Details studentDetails { get; set; }
+        public string Currency => "VND";
+        public int age => 18;
     }
 
     class Details

@@ -13,6 +13,7 @@ namespace _4DynamicBinding
             dynamic dyn = 1;
             object obj = 1;
 
+
             // Rest the mouse pointer over dyn and obj to see their
             // types at compile time.
             System.Console.WriteLine(dyn.GetType());
