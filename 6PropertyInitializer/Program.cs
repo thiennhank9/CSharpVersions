@@ -15,8 +15,8 @@ namespace _6PropertyInitializer
 
     public class Money
     {
-        public string Currency { get; } = "VND";
-        public int Price => 1000;
+        public string Currency { get; } = "VND"; // read only
+        public int Price => 1000; // read only
         public string GetMoney() => string.Format("{0} {1}", Price, Currency);
     }
 }

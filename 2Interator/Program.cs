@@ -12,9 +12,9 @@ namespace _2Iterator
         {
             Console.WriteLine(DoInterator.SomeNumbers());
 
-            foreach (int number in DoInterator.SomeNumbers())
+           foreach (int value in SomeNumbers())
             {
-                Console.Write(number.ToString() + " ");
+                Console.Write(value.ToString() + " ");
             }
             // Output: 3 5 7 
             Console.ReadKey();

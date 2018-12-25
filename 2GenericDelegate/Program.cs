@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 delegate T NumberChanger<T>(T n);
 namespace _2GenericDelegate
 {
-    public class Program
+    public class GenericDelegate
     {
         static int num = 10;
 
@@ -26,6 +26,11 @@ namespace _2GenericDelegate
         public static int getNum()
         {
             return num;
+        }
+
+        public static void setNumber(int newNum)
+        {
+            num = newNum;
         }
 
         static void Main(string[] args)
